@@ -22,17 +22,13 @@ Partial Class FormPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelContenedor.SuspendLayout()
-        Me.PanelFormularios.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelContenedor
@@ -50,7 +46,6 @@ Partial Class FormPrincipal
         'PanelFormularios
         '
         Me.PanelFormularios.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.PanelFormularios.Controls.Add(Me.PictureBox1)
         Me.PanelFormularios.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFormularios.Location = New System.Drawing.Point(250, 0)
         Me.PanelFormularios.Name = "PanelFormularios"
@@ -98,16 +93,6 @@ Partial Class FormPrincipal
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(845, 394)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -119,10 +104,7 @@ Partial Class FormPrincipal
         Me.Name = "FormPrincipal"
         Me.Text = "Administrador - Principal"
         Me.PanelContenedor.ResumeLayout(False)
-        Me.PanelFormularios.ResumeLayout(False)
-        Me.PanelFormularios.PerformLayout()
         Me.PanelMenu.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -132,5 +114,4 @@ Partial Class FormPrincipal
     Friend WithEvents PanelFormularios As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents PictureBox1 As PictureBox
 End Class
