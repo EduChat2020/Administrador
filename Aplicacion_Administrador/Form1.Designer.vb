@@ -35,7 +35,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(43, 36)
+        Me.Label1.Location = New System.Drawing.Point(89, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(154, 32)
         Me.Label1.TabIndex = 0
@@ -43,21 +43,21 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(49, 122)
+        Me.TextBox1.Location = New System.Drawing.Point(95, 98)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(349, 22)
         Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(49, 181)
+        Me.TextBox2.Location = New System.Drawing.Point(95, 157)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(349, 22)
         Me.TextBox2.TabIndex = 2
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(49, 247)
+        Me.TextBox3.Location = New System.Drawing.Point(95, 223)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(349, 22)
         Me.TextBox3.TabIndex = 3
@@ -65,7 +65,7 @@ Partial Class Form1
         'btnCerrar
         '
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
-        Me.btnCerrar.Location = New System.Drawing.Point(772, 12)
+        Me.btnCerrar.Location = New System.Drawing.Point(12, 12)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(16, 16)
         Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize

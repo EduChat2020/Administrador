@@ -1,5 +1,8 @@
 ﻿Public Class FormPrincipal
 
+    Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Timer1.Enabled = True
+    End Sub
 
     Private Sub AbrirFormEnPanel(Of Miform As {Form, New})()
         Dim Formulario As Form
@@ -20,29 +23,34 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnAlumnos_Click(sender As Object, e As EventArgs) Handles btnAlumnos.Click
         AbrirFormEnPanel(Of Form1)()
-        Button1.BackColor = Color.FromArgb(12, 61, 92)
+        btnAlumnos.BackColor = Color.FromArgb(12, 61, 92)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnProfesores_Click(sender As Object, e As EventArgs) Handles btnProfesores.Click
         AbrirFormEnPanel(Of Form2)()
-        Button2.BackColor = Color.FromArgb(12, 61, 92)
+        btnProfesores.BackColor = Color.FromArgb(12, 61, 92)
     End Sub
 
 
     'CERRAR FORMS'
     Private Sub CerrarFormulario(ByVal sender As Object, ByVal e As FormClosedEventArgs)
         If (Application.OpenForms("Form1") Is Nothing) Then
-            Button1.BackColor = Color.FromArgb(6, 31, 98)
+            btnAlumnos.BackColor = Color.FromArgb(6, 31, 98)
         End If
 
         If (Application.OpenForms("Form2") Is Nothing) Then
-            Button2.BackColor = Color.FromArgb(6, 31, 98)
+            btnProfesores.BackColor = Color.FromArgb(6, 31, 98)
         End If
 
 
     End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        lblHora.Text = DateTime.Now.ToString("HH:mm:ss")
+        lblFecha.Text = DateTime.Now.ToLongDateString()
+
+    End Sub
 
 End Class
