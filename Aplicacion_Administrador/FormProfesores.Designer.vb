@@ -26,6 +26,7 @@ Partial Class FormProfesores
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,11 +60,21 @@ Partial Class FormProfesores
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Proximamente..."
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(389, 58)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FormProfesores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.Label2)
@@ -78,4 +89,5 @@ Partial Class FormProfesores
     Friend WithEvents Label2 As Label
     Friend WithEvents btnCerrar As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
 End Class
