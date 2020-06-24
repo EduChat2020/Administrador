@@ -73,16 +73,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FormAOG.Designer.vb">
+      <DependentUpon>FormAOG.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="FormAOG.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="FormEditarAlumno.Designer.vb">
+      <DependentUpon>FormEditarAlumno.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="FormEditarAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNuevoAlumno.Designer.vb">
+      <DependentUpon>FormNuevoAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormNuevoAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlumnos.Designer.vb">
+      <DependentUpon>FormAlumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfesores.Designer.vb">
+      <DependentUpon>FormProfesores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfesores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPrincipal.vb">
@@ -109,11 +127,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FormAOG.resx">
+      <DependentUpon>FormAOG.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="FormEditarAlumno.resx">
+      <DependentUpon>FormEditarAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNuevoAlumno.resx">
+      <DependentUpon>FormNuevoAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlumnos.resx">
+      <DependentUpon>FormAlumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfesores.resx">
+      <DependentUpon>FormProfesores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
