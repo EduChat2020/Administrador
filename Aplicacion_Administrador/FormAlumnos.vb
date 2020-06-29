@@ -6,8 +6,6 @@
         DTAlumnos.Rows.Add(2, "pepe", "reina", 3243232, 26953456)
     End Sub
 
-
-
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
@@ -31,6 +29,11 @@
         Else
             MessageBox.Show("Por favor seleccione una fila...")
             lblAyuda.Visible = True
+
+
+
+
+
 
         End If
 
