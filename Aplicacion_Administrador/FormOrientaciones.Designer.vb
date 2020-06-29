@@ -25,6 +25,7 @@ Partial Class FormOrientaciones
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormOrientaciones))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,11 +49,21 @@ Partial Class FormOrientaciones
         Me.btnCerrar.TabIndex = 19
         Me.btnCerrar.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(309, 320)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(51, 17)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Label2"
+        '
         'FormOrientaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormOrientaciones"
@@ -65,4 +76,5 @@ Partial Class FormOrientaciones
 
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCerrar As PictureBox
+    Friend WithEvents Label2 As Label
 End Class
