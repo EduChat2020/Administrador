@@ -26,6 +26,7 @@ Partial Class FormPrincipal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PanelFormularios = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblFecha = New System.Windows.Forms.Label()
@@ -33,24 +34,18 @@ Partial Class FormPrincipal
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.btnAgenda = New System.Windows.Forms.Button()
         Me.btnListaEspera = New System.Windows.Forms.Button()
-        Me.PanelSubMenuAOG = New System.Windows.Forms.Panel()
-        Me.btnGrupos = New System.Windows.Forms.Button()
-        Me.btnOrientaciones = New System.Windows.Forms.Button()
-        Me.btnAsignaturas = New System.Windows.Forms.Button()
         Me.btnAOG = New System.Windows.Forms.Button()
         Me.btnProfesores = New System.Windows.Forms.Button()
         Me.btnAlumnos = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
-        Me.PanelSubMenuAOG.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelContenedor
@@ -78,6 +73,16 @@ Partial Class FormPrincipal
         Me.PanelFormularios.Name = "PanelFormularios"
         Me.PanelFormularios.Size = New System.Drawing.Size(1030, 700)
         Me.PanelFormularios.TabIndex = 1
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(259, 46)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(582, 154)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'Panel1
         '
@@ -128,7 +133,6 @@ Partial Class FormPrincipal
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.PanelMenu.Controls.Add(Me.btnAgenda)
         Me.PanelMenu.Controls.Add(Me.btnListaEspera)
-        Me.PanelMenu.Controls.Add(Me.PanelSubMenuAOG)
         Me.PanelMenu.Controls.Add(Me.btnAOG)
         Me.PanelMenu.Controls.Add(Me.btnProfesores)
         Me.PanelMenu.Controls.Add(Me.btnAlumnos)
@@ -150,7 +154,7 @@ Partial Class FormPrincipal
         Me.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnAgenda.Image = CType(resources.GetObject("btnAgenda.Image"), System.Drawing.Image)
         Me.btnAgenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAgenda.Location = New System.Drawing.Point(0, 457)
+        Me.btnAgenda.Location = New System.Drawing.Point(0, 300)
         Me.btnAgenda.Name = "btnAgenda"
         Me.btnAgenda.Size = New System.Drawing.Size(270, 50)
         Me.btnAgenda.TabIndex = 30
@@ -168,78 +172,12 @@ Partial Class FormPrincipal
         Me.btnListaEspera.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnListaEspera.Image = CType(resources.GetObject("btnListaEspera.Image"), System.Drawing.Image)
         Me.btnListaEspera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnListaEspera.Location = New System.Drawing.Point(0, 407)
+        Me.btnListaEspera.Location = New System.Drawing.Point(0, 250)
         Me.btnListaEspera.Name = "btnListaEspera"
         Me.btnListaEspera.Size = New System.Drawing.Size(270, 50)
         Me.btnListaEspera.TabIndex = 28
         Me.btnListaEspera.Text = "Lista de espera"
         Me.btnListaEspera.UseVisualStyleBackColor = True
-        '
-        'PanelSubMenuAOG
-        '
-        Me.PanelSubMenuAOG.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.PanelSubMenuAOG.Controls.Add(Me.btnGrupos)
-        Me.PanelSubMenuAOG.Controls.Add(Me.btnOrientaciones)
-        Me.PanelSubMenuAOG.Controls.Add(Me.btnAsignaturas)
-        Me.PanelSubMenuAOG.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelSubMenuAOG.Location = New System.Drawing.Point(0, 250)
-        Me.PanelSubMenuAOG.Name = "PanelSubMenuAOG"
-        Me.PanelSubMenuAOG.Size = New System.Drawing.Size(270, 157)
-        Me.PanelSubMenuAOG.TabIndex = 27
-        '
-        'btnGrupos
-        '
-        Me.btnGrupos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnGrupos.FlatAppearance.BorderSize = 0
-        Me.btnGrupos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnGrupos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.btnGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGrupos.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGrupos.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnGrupos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGrupos.Location = New System.Drawing.Point(0, 100)
-        Me.btnGrupos.Name = "btnGrupos"
-        Me.btnGrupos.Size = New System.Drawing.Size(270, 50)
-        Me.btnGrupos.TabIndex = 26
-        Me.btnGrupos.Text = "Grupos"
-        Me.btnGrupos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGrupos.UseVisualStyleBackColor = True
-        '
-        'btnOrientaciones
-        '
-        Me.btnOrientaciones.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnOrientaciones.FlatAppearance.BorderSize = 0
-        Me.btnOrientaciones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnOrientaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.btnOrientaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnOrientaciones.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOrientaciones.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnOrientaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOrientaciones.Location = New System.Drawing.Point(0, 50)
-        Me.btnOrientaciones.Name = "btnOrientaciones"
-        Me.btnOrientaciones.Size = New System.Drawing.Size(270, 50)
-        Me.btnOrientaciones.TabIndex = 25
-        Me.btnOrientaciones.Text = "Orientaciones"
-        Me.btnOrientaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOrientaciones.UseVisualStyleBackColor = True
-        '
-        'btnAsignaturas
-        '
-        Me.btnAsignaturas.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnAsignaturas.FlatAppearance.BorderSize = 0
-        Me.btnAsignaturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnAsignaturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.btnAsignaturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAsignaturas.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAsignaturas.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnAsignaturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAsignaturas.Location = New System.Drawing.Point(0, 0)
-        Me.btnAsignaturas.Name = "btnAsignaturas"
-        Me.btnAsignaturas.Size = New System.Drawing.Size(270, 50)
-        Me.btnAsignaturas.TabIndex = 24
-        Me.btnAsignaturas.Text = "Asignaturas"
-        Me.btnAsignaturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAsignaturas.UseVisualStyleBackColor = True
         '
         'btnAOG
         '
@@ -256,7 +194,7 @@ Partial Class FormPrincipal
         Me.btnAOG.Name = "btnAOG"
         Me.btnAOG.Size = New System.Drawing.Size(270, 50)
         Me.btnAOG.TabIndex = 26
-        Me.btnAOG.Text = "AOG"
+        Me.btnAOG.Text = "el boton magico"
         Me.btnAOG.UseVisualStyleBackColor = True
         '
         'btnProfesores
@@ -318,16 +256,6 @@ Partial Class FormPrincipal
         'Timer1
         '
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(259, 46)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(582, 154)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -342,13 +270,12 @@ Partial Class FormPrincipal
         Me.PanelContenedor.ResumeLayout(False)
         Me.PanelFormularios.ResumeLayout(False)
         Me.PanelFormularios.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.PanelMenu.ResumeLayout(False)
-        Me.PanelSubMenuAOG.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
         Me.PanelLogo.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -365,10 +292,6 @@ Partial Class FormPrincipal
     Friend WithEvents PanelLogo As Panel
     Friend WithEvents btnAgenda As Button
     Friend WithEvents btnListaEspera As Button
-    Friend WithEvents PanelSubMenuAOG As Panel
-    Friend WithEvents btnGrupos As Button
-    Friend WithEvents btnOrientaciones As Button
-    Friend WithEvents btnAsignaturas As Button
     Friend WithEvents btnAOG As Button
     Friend WithEvents btnProfesores As Button
     Friend WithEvents btnAlumnos As Button

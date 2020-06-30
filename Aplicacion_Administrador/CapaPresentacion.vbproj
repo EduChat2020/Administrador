@@ -73,12 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAsignaturas.Designer.vb">
-      <DependentUpon>FormAsignaturas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormAsignaturas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormEditarAlumno.Designer.vb">
       <DependentUpon>FormEditarAlumno.vb</DependentUpon>
     </Compile>
@@ -89,12 +83,6 @@
       <DependentUpon>FormEditarProfesor.vb</DependentUpon>
     </Compile>
     <Compile Include="FormEditarProfesor.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGrupos.Designer.vb">
-      <DependentUpon>FormGrupos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormGrupos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormNuevoAlumno.Designer.vb">
@@ -113,12 +101,6 @@
       <DependentUpon>FormNuevoProfesor.vb</DependentUpon>
     </Compile>
     <Compile Include="FormNuevoProfesor.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormOrientaciones.Designer.vb">
-      <DependentUpon>FormOrientaciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormOrientaciones.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormProfesores.Designer.vb">
@@ -151,17 +133,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormAsignaturas.resx">
-      <DependentUpon>FormAsignaturas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarAlumno.resx">
       <DependentUpon>FormEditarAlumno.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditarProfesor.resx">
       <DependentUpon>FormEditarProfesor.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGrupos.resx">
-      <DependentUpon>FormGrupos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNuevoAlumno.resx">
       <DependentUpon>FormNuevoAlumno.vb</DependentUpon>
@@ -171,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNuevoProfesor.resx">
       <DependentUpon>FormNuevoProfesor.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormOrientaciones.resx">
-      <DependentUpon>FormOrientaciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProfesores.resx">
       <DependentUpon>FormProfesores.vb</DependentUpon>

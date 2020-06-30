@@ -35,22 +35,6 @@ Public Class FormPrincipal
             btnProfesores.BackColor = Color.FromArgb(0, 53, 92)
         End If
 
-        If (Application.OpenForms("FormAOG") Is Nothing) Then
-            btnAOG.BackColor = Color.FromArgb(0, 53, 92)
-        End If
-
-        If (Application.OpenForms("FormAsignaturas") Is Nothing) Then
-            btnAsignaturas.BackColor = Color.FromArgb(0, 53, 92)
-        End If
-
-        If (Application.OpenForms("FormGrupos") Is Nothing) Then
-            btnGrupos.BackColor = Color.FromArgb(0, 53, 92)
-        End If
-
-        If (Application.OpenForms("FormOrientaciones") Is Nothing) Then
-            btnOrientaciones.BackColor = Color.FromArgb(0, 53, 92)
-        End If
-
 
 
     End Sub
@@ -67,29 +51,6 @@ Public Class FormPrincipal
         btnProfesores.BackColor = Color.FromArgb(0, 102, 204)
     End Sub
 
-
-    Private Sub btnAOG_Click_1(sender As Object, e As EventArgs) Handles btnAOG.Click
-        showSubMenu(PanelSubMenuAOG)
-
-    End Sub
-
-    Private Sub btnAsignaturas_Click(sender As Object, e As EventArgs) Handles btnAsignaturas.Click
-        AbrirFormEnPanel(Of FormAsignaturas)()
-        btnAsignaturas.BackColor = Color.FromArgb(0, 102, 204)
-    End Sub
-
-    Private Sub btnOrientaciones_Click(sender As Object, e As EventArgs) Handles btnOrientaciones.Click
-        AbrirFormEnPanel(Of FormOrientaciones)()
-        btnOrientaciones.BackColor = Color.FromArgb(0, 102, 204)
-    End Sub
-
-    Private Sub btnGrupos_Click(sender As Object, e As EventArgs) Handles btnGrupos.Click
-        AbrirFormEnPanel(Of FormGrupos)()
-        btnGrupos.BackColor = Color.FromArgb(0, 102, 204)
-    End Sub
-
-
-
 #End Region
 
 #Region "HORA INICIO"
@@ -105,22 +66,11 @@ Public Class FormPrincipal
 
     Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load 'HORA MENU'
         Timer1.Enabled = True
-        hideSubMenu()
-    End Sub
-
-    Private Sub hideSubMenu()
-        PanelSubMenuAOG.Visible = False
 
     End Sub
 
-    Private Sub showSubMenu(submenu As Panel)
-        If submenu.Visible = False Then
-            hideSubMenu()
-            submenu.Visible = True
-        Else
-            submenu.Visible = False
-        End If
-    End Sub
+
+
 
 
 End Class
