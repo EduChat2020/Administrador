@@ -46,7 +46,7 @@ Partial Class FormProfesores
         'btnCerrar
         '
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
-        Me.btnCerrar.Location = New System.Drawing.Point(176, 11)
+        Me.btnCerrar.Location = New System.Drawing.Point(111, 47)
         Me.btnCerrar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(16, 16)
