@@ -53,7 +53,7 @@ Partial Class FormAlumnos
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(303, 37)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Control de Alumnos"
+        Me.Label1.Text = "Control de Alúmnos"
         '
         'btnCerrar
         '

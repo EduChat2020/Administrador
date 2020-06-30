@@ -200,5 +200,15 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEmpaquetadora2\CapaEmpaquetadora.vbproj">
+      <Project>{df2bf1e4-5964-460b-966f-f294f08c841f}</Project>
+      <Name>CapaEmpaquetadora</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio2\CapaNegocio.vbproj">
+      <Project>{54f9f898-8f73-4fbd-b11b-ed20bea209be}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
