@@ -51,6 +51,12 @@ Public Class FormPrincipal
         btnProfesores.BackColor = Color.FromArgb(0, 102, 204)
     End Sub
 
+    Private Sub btnAOG_Click(sender As Object, e As EventArgs) Handles btnAOG.Click
+        AbrirFormEnPanel(Of FormOriMat)()
+        btnProfesores.BackColor = Color.FromArgb(0, 102, 204)
+    End Sub
+
+
 #End Region
 
 #Region "HORA INICIO"
@@ -69,8 +75,9 @@ Public Class FormPrincipal
 
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
-
+    End Sub
 
 
 End Class

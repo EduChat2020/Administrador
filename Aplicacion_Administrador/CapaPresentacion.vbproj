@@ -103,6 +103,12 @@
     <Compile Include="FormNuevoProfesor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormOriMat.Designer.vb">
+      <DependentUpon>FormOriMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOriMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormProfesores.Designer.vb">
       <DependentUpon>FormProfesores.vb</DependentUpon>
     </Compile>
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="FormNuevoProfesor.resx">
       <DependentUpon>FormNuevoProfesor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormOriMat.resx">
+      <DependentUpon>FormOriMat.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormProfesores.resx">
       <DependentUpon>FormProfesores.vb</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +191,9 @@
       <Project>{54f9f898-8f73-4fbd-b11b-ed20bea209be}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\887652_desktop_512x512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -39,5 +39,7 @@
 
     End Sub
 
+    Private Sub lblAyuda_Click(sender As Object, e As EventArgs) Handles lblAyuda.Click
 
+    End Sub
 End Class

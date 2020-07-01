@@ -47,19 +47,20 @@ Partial Class FormAlumnos
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(98, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(312, 9)
+        Me.Label1.Location = New System.Drawing.Point(234, 7)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(303, 37)
+        Me.Label1.Size = New System.Drawing.Size(224, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Control de Alúmnos"
         '
         'btnCerrar
         '
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
-        Me.btnCerrar.Location = New System.Drawing.Point(12, 9)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnCerrar.Location = New System.Drawing.Point(9, 7)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(16, 16)
         Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -73,7 +74,7 @@ Partial Class FormAlumnos
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight
@@ -89,8 +90,8 @@ Partial Class FormAlumnos
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DTAlumnos.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DTAlumnos.Location = New System.Drawing.Point(28, 78)
-        Me.DTAlumnos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DTAlumnos.Location = New System.Drawing.Point(21, 63)
+        Me.DTAlumnos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DTAlumnos.Name = "DTAlumnos"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Highlight
@@ -105,7 +106,7 @@ Partial Class FormAlumnos
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue
         Me.DTAlumnos.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DTAlumnos.RowTemplate.Height = 24
-        Me.DTAlumnos.Size = New System.Drawing.Size(884, 517)
+        Me.DTAlumnos.Size = New System.Drawing.Size(663, 420)
         Me.DTAlumnos.TabIndex = 5
         '
         'ID_Alumnos
@@ -156,10 +157,10 @@ Partial Class FormAlumnos
         Me.btnNuevo_Alumno.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.btnNuevo_Alumno.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
         Me.btnNuevo_Alumno.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.btnNuevo_Alumno.Location = New System.Drawing.Point(944, 78)
-        Me.btnNuevo_Alumno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnNuevo_Alumno.Location = New System.Drawing.Point(708, 63)
+        Me.btnNuevo_Alumno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnNuevo_Alumno.Name = "btnNuevo_Alumno"
-        Me.btnNuevo_Alumno.Size = New System.Drawing.Size(173, 55)
+        Me.btnNuevo_Alumno.Size = New System.Drawing.Size(130, 45)
         Me.btnNuevo_Alumno.TabIndex = 6
         Me.btnNuevo_Alumno.Text = "Nuevo"
         Me.btnNuevo_Alumno.UseVisualStyleBackColor = False
@@ -174,10 +175,10 @@ Partial Class FormAlumnos
         Me.btnEditar_Alumno.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.btnEditar_Alumno.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
         Me.btnEditar_Alumno.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.btnEditar_Alumno.Location = New System.Drawing.Point(944, 164)
-        Me.btnEditar_Alumno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnEditar_Alumno.Location = New System.Drawing.Point(708, 133)
+        Me.btnEditar_Alumno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEditar_Alumno.Name = "btnEditar_Alumno"
-        Me.btnEditar_Alumno.Size = New System.Drawing.Size(173, 55)
+        Me.btnEditar_Alumno.Size = New System.Drawing.Size(130, 45)
         Me.btnEditar_Alumno.TabIndex = 7
         Me.btnEditar_Alumno.Text = "Editar"
         Me.btnEditar_Alumno.UseVisualStyleBackColor = False
@@ -192,10 +193,10 @@ Partial Class FormAlumnos
         Me.btnEliminar_Alumno.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.btnEliminar_Alumno.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
         Me.btnEliminar_Alumno.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.btnEliminar_Alumno.Location = New System.Drawing.Point(944, 254)
-        Me.btnEliminar_Alumno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnEliminar_Alumno.Location = New System.Drawing.Point(708, 206)
+        Me.btnEliminar_Alumno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEliminar_Alumno.Name = "btnEliminar_Alumno"
-        Me.btnEliminar_Alumno.Size = New System.Drawing.Size(173, 55)
+        Me.btnEliminar_Alumno.Size = New System.Drawing.Size(130, 45)
         Me.btnEliminar_Alumno.TabIndex = 8
         Me.btnEliminar_Alumno.Text = "Eliminar"
         Me.btnEliminar_Alumno.UseVisualStyleBackColor = False
@@ -204,21 +205,22 @@ Partial Class FormAlumnos
         '
         Me.lblAyuda.AutoSize = True
         Me.lblAyuda.BackColor = System.Drawing.Color.Transparent
-        Me.lblAyuda.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAyuda.ForeColor = System.Drawing.Color.Red
-        Me.lblAyuda.Location = New System.Drawing.Point(25, 48)
+        Me.lblAyuda.Location = New System.Drawing.Point(19, 39)
+        Me.lblAyuda.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblAyuda.Name = "lblAyuda"
-        Me.lblAyuda.Size = New System.Drawing.Size(77, 19)
+        Me.lblAyuda.Size = New System.Drawing.Size(54, 13)
         Me.lblAyuda.TabIndex = 9
         Me.lblAyuda.Text = "Click Aqui"
         Me.lblAyuda.Visible = False
         '
         'FormAlumnos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(1129, 606)
+        Me.ClientSize = New System.Drawing.Size(847, 492)
         Me.Controls.Add(Me.lblAyuda)
         Me.Controls.Add(Me.btnEliminar_Alumno)
         Me.Controls.Add(Me.btnEditar_Alumno)
@@ -227,7 +229,7 @@ Partial Class FormAlumnos
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormAlumnos"
         Me.ShowInTaskbar = False
         Me.Text = "Alumnos"
