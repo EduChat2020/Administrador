@@ -27,15 +27,12 @@ Partial Class FormPrincipal
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.lblFecha = New System.Windows.Forms.Label()
         Me.lblHora = New System.Windows.Forms.Label()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.btnAgenda = New System.Windows.Forms.Button()
         Me.btnListaEspera = New System.Windows.Forms.Button()
-        Me.btnAOG = New System.Windows.Forms.Button()
-        Me.btnProfesores = New System.Windows.Forms.Button()
+        Me.btnAOP = New System.Windows.Forms.Button()
         Me.btnAlumnos = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -43,7 +40,6 @@ Partial Class FormPrincipal
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         Me.SuspendLayout()
@@ -55,10 +51,10 @@ Partial Class FormPrincipal
         Me.PanelContenedor.Controls.Add(Me.PanelMenu)
         Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContenedor.Location = New System.Drawing.Point(0, 0)
-        Me.PanelContenedor.Margin = New System.Windows.Forms.Padding(2)
-        Me.PanelContenedor.MinimumSize = New System.Drawing.Size(412, 325)
+        Me.PanelContenedor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PanelContenedor.MinimumSize = New System.Drawing.Size(549, 400)
         Me.PanelContenedor.Name = "PanelContenedor"
-        Me.PanelContenedor.Size = New System.Drawing.Size(1293, 678)
+        Me.PanelContenedor.Size = New System.Drawing.Size(1582, 813)
         Me.PanelContenedor.TabIndex = 0
         '
         'PanelFormularios
@@ -66,60 +62,34 @@ Partial Class FormPrincipal
         Me.PanelFormularios.AutoScroll = True
         Me.PanelFormularios.BackColor = System.Drawing.Color.WhiteSmoke
         Me.PanelFormularios.Controls.Add(Me.PictureBox1)
-        Me.PanelFormularios.Controls.Add(Me.Panel1)
         Me.PanelFormularios.Controls.Add(Me.lblFecha)
         Me.PanelFormularios.Controls.Add(Me.lblHora)
         Me.PanelFormularios.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelFormularios.Location = New System.Drawing.Point(202, 0)
-        Me.PanelFormularios.Margin = New System.Windows.Forms.Padding(2)
+        Me.PanelFormularios.Location = New System.Drawing.Point(269, 0)
+        Me.PanelFormularios.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelFormularios.Name = "PanelFormularios"
-        Me.PanelFormularios.Size = New System.Drawing.Size(1091, 678)
+        Me.PanelFormularios.Size = New System.Drawing.Size(1313, 813)
         Me.PanelFormularios.TabIndex = 1
         '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(353, 92)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Location = New System.Drawing.Point(400, 102)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(436, 125)
+        Me.PictureBox1.Size = New System.Drawing.Size(581, 154)
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 629)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1091, 49)
-        Me.Panel1.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(275, 16)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(540, 18)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Creado y Diseñado por TecnoLíder Copyright © Todos los derechos reservados."
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblFecha
         '
         Me.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblFecha.AutoSize = True
         Me.lblFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFecha.Location = New System.Drawing.Point(389, 376)
-        Me.lblFecha.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFecha.Location = New System.Drawing.Point(448, 452)
         Me.lblFecha.Name = "lblFecha"
-        Me.lblFecha.Size = New System.Drawing.Size(97, 36)
+        Me.lblFecha.Size = New System.Drawing.Size(125, 44)
         Me.lblFecha.TabIndex = 1
         Me.lblFecha.Text = "Fecha"
         '
@@ -128,10 +98,9 @@ Partial Class FormPrincipal
         Me.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblHora.AutoSize = True
         Me.lblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHora.Location = New System.Drawing.Point(377, 270)
-        Me.lblHora.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblHora.Location = New System.Drawing.Point(432, 321)
         Me.lblHora.Name = "lblHora"
-        Me.lblHora.Size = New System.Drawing.Size(322, 108)
+        Me.lblHora.Size = New System.Drawing.Size(404, 135)
         Me.lblHora.TabIndex = 0
         Me.lblHora.Text = "HORA"
         '
@@ -140,15 +109,14 @@ Partial Class FormPrincipal
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.PanelMenu.Controls.Add(Me.btnAgenda)
         Me.PanelMenu.Controls.Add(Me.btnListaEspera)
-        Me.PanelMenu.Controls.Add(Me.btnAOG)
-        Me.PanelMenu.Controls.Add(Me.btnProfesores)
+        Me.PanelMenu.Controls.Add(Me.btnAOP)
         Me.PanelMenu.Controls.Add(Me.btnAlumnos)
         Me.PanelMenu.Controls.Add(Me.PanelLogo)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
-        Me.PanelMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.PanelMenu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(202, 678)
+        Me.PanelMenu.Size = New System.Drawing.Size(269, 813)
         Me.PanelMenu.TabIndex = 0
         '
         'btnAgenda
@@ -162,10 +130,10 @@ Partial Class FormPrincipal
         Me.btnAgenda.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnAgenda.Image = CType(resources.GetObject("btnAgenda.Image"), System.Drawing.Image)
         Me.btnAgenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAgenda.Location = New System.Drawing.Point(0, 245)
-        Me.btnAgenda.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAgenda.Location = New System.Drawing.Point(0, 250)
+        Me.btnAgenda.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAgenda.Name = "btnAgenda"
-        Me.btnAgenda.Size = New System.Drawing.Size(202, 41)
+        Me.btnAgenda.Size = New System.Drawing.Size(269, 50)
         Me.btnAgenda.TabIndex = 30
         Me.btnAgenda.Text = "Agenda "
         Me.btnAgenda.UseVisualStyleBackColor = True
@@ -181,51 +149,32 @@ Partial Class FormPrincipal
         Me.btnListaEspera.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnListaEspera.Image = CType(resources.GetObject("btnListaEspera.Image"), System.Drawing.Image)
         Me.btnListaEspera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnListaEspera.Location = New System.Drawing.Point(0, 204)
-        Me.btnListaEspera.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnListaEspera.Location = New System.Drawing.Point(0, 200)
+        Me.btnListaEspera.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnListaEspera.Name = "btnListaEspera"
-        Me.btnListaEspera.Size = New System.Drawing.Size(202, 41)
+        Me.btnListaEspera.Size = New System.Drawing.Size(269, 50)
         Me.btnListaEspera.TabIndex = 28
         Me.btnListaEspera.Text = "Lista de espera"
         Me.btnListaEspera.UseVisualStyleBackColor = True
         '
-        'btnAOG
+        'btnAOP
         '
-        Me.btnAOG.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnAOG.FlatAppearance.BorderSize = 0
-        Me.btnAOG.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnAOG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.btnAOG.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAOG.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
-        Me.btnAOG.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnAOG.Image = CType(resources.GetObject("btnAOG.Image"), System.Drawing.Image)
-        Me.btnAOG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAOG.Location = New System.Drawing.Point(0, 163)
-        Me.btnAOG.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAOG.Name = "btnAOG"
-        Me.btnAOG.Size = New System.Drawing.Size(202, 41)
-        Me.btnAOG.TabIndex = 26
-        Me.btnAOG.Text = "el boton magico"
-        Me.btnAOG.UseVisualStyleBackColor = True
-        '
-        'btnProfesores
-        '
-        Me.btnProfesores.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnProfesores.FlatAppearance.BorderSize = 0
-        Me.btnProfesores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.btnProfesores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProfesores.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
-        Me.btnProfesores.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnProfesores.Image = CType(resources.GetObject("btnProfesores.Image"), System.Drawing.Image)
-        Me.btnProfesores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnProfesores.Location = New System.Drawing.Point(0, 122)
-        Me.btnProfesores.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnProfesores.Name = "btnProfesores"
-        Me.btnProfesores.Size = New System.Drawing.Size(202, 41)
-        Me.btnProfesores.TabIndex = 25
-        Me.btnProfesores.Text = "Profesores"
-        Me.btnProfesores.UseVisualStyleBackColor = True
+        Me.btnAOP.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAOP.FlatAppearance.BorderSize = 0
+        Me.btnAOP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.btnAOP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(198, Byte), Integer))
+        Me.btnAOP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAOP.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
+        Me.btnAOP.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAOP.Image = CType(resources.GetObject("btnAOP.Image"), System.Drawing.Image)
+        Me.btnAOP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAOP.Location = New System.Drawing.Point(0, 150)
+        Me.btnAOP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAOP.Name = "btnAOP"
+        Me.btnAOP.Size = New System.Drawing.Size(269, 50)
+        Me.btnAOP.TabIndex = 26
+        Me.btnAOP.Text = "AOP"
+        Me.btnAOP.UseVisualStyleBackColor = True
         '
         'btnAlumnos
         '
@@ -238,10 +187,10 @@ Partial Class FormPrincipal
         Me.btnAlumnos.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnAlumnos.Image = CType(resources.GetObject("btnAlumnos.Image"), System.Drawing.Image)
         Me.btnAlumnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAlumnos.Location = New System.Drawing.Point(0, 81)
-        Me.btnAlumnos.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAlumnos.Location = New System.Drawing.Point(0, 100)
+        Me.btnAlumnos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAlumnos.Name = "btnAlumnos"
-        Me.btnAlumnos.Size = New System.Drawing.Size(202, 41)
+        Me.btnAlumnos.Size = New System.Drawing.Size(269, 50)
         Me.btnAlumnos.TabIndex = 24
         Me.btnAlumnos.Text = "  Alúmnos"
         Me.btnAlumnos.UseVisualStyleBackColor = True
@@ -251,9 +200,9 @@ Partial Class FormPrincipal
         Me.PanelLogo.Controls.Add(Me.Label2)
         Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelLogo.Location = New System.Drawing.Point(0, 0)
-        Me.PanelLogo.Margin = New System.Windows.Forms.Padding(2)
+        Me.PanelLogo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelLogo.Name = "PanelLogo"
-        Me.PanelLogo.Size = New System.Drawing.Size(202, 81)
+        Me.PanelLogo.Size = New System.Drawing.Size(269, 100)
         Me.PanelLogo.TabIndex = 20
         '
         'Label2
@@ -261,10 +210,9 @@ Partial Class FormPrincipal
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(38, 23)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(51, 28)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(131, 36)
+        Me.Label2.Size = New System.Drawing.Size(167, 44)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "EduChat"
         '
@@ -273,22 +221,20 @@ Partial Class FormPrincipal
         '
         'FormPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1293, 678)
+        Me.ClientSize = New System.Drawing.Size(1582, 813)
         Me.Controls.Add(Me.PanelContenedor)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.MinimumSize = New System.Drawing.Size(979, 576)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MinimumSize = New System.Drawing.Size(1299, 698)
         Me.Name = "FormPrincipal"
         Me.Text = "Aplicación Administrador"
         Me.PanelContenedor.ResumeLayout(False)
         Me.PanelFormularios.ResumeLayout(False)
         Me.PanelFormularios.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
         Me.PanelLogo.PerformLayout()
@@ -303,13 +249,10 @@ Partial Class FormPrincipal
     Friend WithEvents Label2 As Label
     Friend WithEvents lblFecha As Label
     Friend WithEvents lblHora As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents PanelLogo As Panel
     Friend WithEvents btnAgenda As Button
     Friend WithEvents btnListaEspera As Button
-    Friend WithEvents btnAOG As Button
-    Friend WithEvents btnProfesores As Button
+    Friend WithEvents btnAOP As Button
     Friend WithEvents btnAlumnos As Button
     Friend WithEvents PictureBox1 As PictureBox
 End Class

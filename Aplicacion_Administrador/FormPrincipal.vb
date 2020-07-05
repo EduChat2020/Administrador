@@ -31,8 +31,8 @@ Public Class FormPrincipal
             btnAlumnos.BackColor = Color.FromArgb(0, 53, 92)
         End If
 
-        If (Application.OpenForms("FormProfesores") Is Nothing) Then
-            btnProfesores.BackColor = Color.FromArgb(0, 53, 92)
+        If (Application.OpenForms("FormOriMat") Is Nothing) Then
+            btnAOP.BackColor = Color.FromArgb(0, 53, 92)
         End If
 
 
@@ -46,14 +46,11 @@ Public Class FormPrincipal
         btnAlumnos.BackColor = Color.FromArgb(0, 102, 204)
     End Sub
 
-    Private Sub btnProfesores_Click_1(sender As Object, e As EventArgs) Handles btnProfesores.Click
-        AbrirFormEnPanel(Of FormProfesores)()
-        btnProfesores.BackColor = Color.FromArgb(0, 102, 204)
-    End Sub
 
-    Private Sub btnAOG_Click(sender As Object, e As EventArgs) Handles btnAOG.Click
+
+    Private Sub btnAOP_Click(sender As Object, e As EventArgs) Handles btnAOP.Click
         AbrirFormEnPanel(Of FormOriMat)()
-        btnProfesores.BackColor = Color.FromArgb(0, 102, 204)
+        btnAOP.BackColor = Color.FromArgb(0, 102, 204)
     End Sub
 
 
@@ -75,9 +72,7 @@ Public Class FormPrincipal
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
-    End Sub
 
 
 End Class
