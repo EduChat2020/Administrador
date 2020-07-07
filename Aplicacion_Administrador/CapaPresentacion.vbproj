@@ -73,12 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAsignaturas.Designer.vb">
-      <DependentUpon>FormAsignaturas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormAsignaturas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormEditarAlumno.Designer.vb">
       <DependentUpon>FormEditarAlumno.vb</DependentUpon>
     </Compile>
@@ -89,12 +83,6 @@
       <DependentUpon>FormEditarProfesor.vb</DependentUpon>
     </Compile>
     <Compile Include="FormEditarProfesor.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormGrupos.Designer.vb">
-      <DependentUpon>FormGrupos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormGrupos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormNuevoAlumno.Designer.vb">
@@ -115,10 +103,10 @@
     <Compile Include="FormNuevoProfesor.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormOrientaciones.Designer.vb">
-      <DependentUpon>FormOrientaciones.vb</DependentUpon>
+    <Compile Include="FormOriMat.Designer.vb">
+      <DependentUpon>FormOriMat.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormOrientaciones.vb">
+    <Compile Include="FormOriMat.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormProfesores.Designer.vb">
@@ -151,17 +139,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormAsignaturas.resx">
-      <DependentUpon>FormAsignaturas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarAlumno.resx">
       <DependentUpon>FormEditarAlumno.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditarProfesor.resx">
       <DependentUpon>FormEditarProfesor.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormGrupos.resx">
-      <DependentUpon>FormGrupos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNuevoAlumno.resx">
       <DependentUpon>FormNuevoAlumno.vb</DependentUpon>
@@ -172,8 +154,8 @@
     <EmbeddedResource Include="FormNuevoProfesor.resx">
       <DependentUpon>FormNuevoProfesor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormOrientaciones.resx">
-      <DependentUpon>FormOrientaciones.vb</DependentUpon>
+    <EmbeddedResource Include="FormOriMat.resx">
+      <DependentUpon>FormOriMat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProfesores.resx">
       <DependentUpon>FormProfesores.vb</DependentUpon>
@@ -199,6 +181,19 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEmpaquetadora2\CapaEmpaquetadora.vbproj">
+      <Project>{df2bf1e4-5964-460b-966f-f294f08c841f}</Project>
+      <Name>CapaEmpaquetadora</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio2\CapaNegocio.vbproj">
+      <Project>{54f9f898-8f73-4fbd-b11b-ed20bea209be}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\887652_desktop_512x512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

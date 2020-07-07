@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FADD2DCF-7C5C-42F3-9938-A7A908AE407B}</ProjectGuid>
+    <ProjectGuid>{54F9F898-8F73-4FBD-B11B-ED20BEA209BE}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CapaNegocio</RootNamespace>
-    <AssemblyName>CapaNegocio</AssemblyName>
+    <RootNamespace>CapaNegocio2</RootNamespace>
+    <AssemblyName>CapaNegocio2</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -19,7 +19,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>CapaNegocio.xml</DocumentationFile>
+    <DocumentationFile>CapaNegocio2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -28,7 +28,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>CapaNegocio.xml</DocumentationFile>
+    <DocumentationFile>CapaNegocio2.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -99,6 +99,16 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos2\CapaDatos.vbproj">
+      <Project>{813255c4-fa0a-4e2c-a6c5-e4e49b514081}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEmpaquetadora2\CapaEmpaquetadora.vbproj">
+      <Project>{df2bf1e4-5964-460b-966f-f294f08c841f}</Project>
+      <Name>CapaEmpaquetadora</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

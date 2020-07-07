@@ -30,16 +30,12 @@ Partial Class FormEditarAlumno
         Me.tbID = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.tbPrimerApellidoA = New System.Windows.Forms.TextBox()
         Me.tbCedulaA = New System.Windows.Forms.TextBox()
         Me.tbTelefonoA = New System.Windows.Forms.TextBox()
         Me.tbNombreA = New System.Windows.Forms.TextBox()
         Me.lblCedula = New System.Windows.Forms.Label()
-        Me.lblOrientacion = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblCurso = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblFechadeNacimiento = New System.Windows.Forms.Label()
         Me.lblPrimerApellido = New System.Windows.Forms.Label()
@@ -96,16 +92,12 @@ Partial Class FormEditarAlumno
         Me.PanelContenedorNA.Controls.Add(Me.tbID)
         Me.PanelContenedorNA.Controls.Add(Me.Label2)
         Me.PanelContenedorNA.Controls.Add(Me.PictureBox1)
-        Me.PanelContenedorNA.Controls.Add(Me.ComboBox2)
-        Me.PanelContenedorNA.Controls.Add(Me.ComboBox1)
         Me.PanelContenedorNA.Controls.Add(Me.tbPrimerApellidoA)
         Me.PanelContenedorNA.Controls.Add(Me.tbCedulaA)
         Me.PanelContenedorNA.Controls.Add(Me.tbTelefonoA)
         Me.PanelContenedorNA.Controls.Add(Me.tbNombreA)
         Me.PanelContenedorNA.Controls.Add(Me.lblCedula)
-        Me.PanelContenedorNA.Controls.Add(Me.lblOrientacion)
         Me.PanelContenedorNA.Controls.Add(Me.Label1)
-        Me.PanelContenedorNA.Controls.Add(Me.lblCurso)
         Me.PanelContenedorNA.Controls.Add(Me.lblNombre)
         Me.PanelContenedorNA.Controls.Add(Me.lblFechadeNacimiento)
         Me.PanelContenedorNA.Controls.Add(Me.lblPrimerApellido)
@@ -119,7 +111,7 @@ Partial Class FormEditarAlumno
         '
         Me.tbID.Enabled = False
         Me.tbID.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.tbID.Location = New System.Drawing.Point(280, 27)
+        Me.tbID.Location = New System.Drawing.Point(301, 94)
         Me.tbID.Name = "tbID"
         Me.tbID.Size = New System.Drawing.Size(417, 22)
         Me.tbID.TabIndex = 17
@@ -128,7 +120,7 @@ Partial Class FormEditarAlumno
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 26)
+        Me.Label2.Location = New System.Drawing.Point(44, 93)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(30, 23)
         Me.Label2.TabIndex = 16
@@ -145,27 +137,9 @@ Partial Class FormEditarAlumno
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
         '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"ew", "ew", "ew", "ew", "ew", "ew"})
-        Me.ComboBox2.Location = New System.Drawing.Point(280, 325)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(417, 24)
-        Me.ComboBox2.TabIndex = 14
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"d", "e", "e", "w", "wq"})
-        Me.ComboBox1.Location = New System.Drawing.Point(280, 273)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(417, 24)
-        Me.ComboBox1.TabIndex = 13
-        '
         'tbPrimerApellidoA
         '
-        Me.tbPrimerApellidoA.Location = New System.Drawing.Point(280, 122)
+        Me.tbPrimerApellidoA.Location = New System.Drawing.Point(301, 189)
         Me.tbPrimerApellidoA.Name = "tbPrimerApellidoA"
         Me.tbPrimerApellidoA.Size = New System.Drawing.Size(417, 22)
         Me.tbPrimerApellidoA.TabIndex = 12
@@ -173,14 +147,14 @@ Partial Class FormEditarAlumno
         'tbCedulaA
         '
         Me.tbCedulaA.Enabled = False
-        Me.tbCedulaA.Location = New System.Drawing.Point(280, 177)
+        Me.tbCedulaA.Location = New System.Drawing.Point(301, 244)
         Me.tbCedulaA.Name = "tbCedulaA"
         Me.tbCedulaA.Size = New System.Drawing.Size(417, 22)
         Me.tbCedulaA.TabIndex = 9
         '
         'tbTelefonoA
         '
-        Me.tbTelefonoA.Location = New System.Drawing.Point(280, 221)
+        Me.tbTelefonoA.Location = New System.Drawing.Point(301, 288)
         Me.tbTelefonoA.Name = "tbTelefonoA"
         Me.tbTelefonoA.Size = New System.Drawing.Size(417, 22)
         Me.tbTelefonoA.TabIndex = 8
@@ -188,7 +162,7 @@ Partial Class FormEditarAlumno
         'tbNombreA
         '
         Me.tbNombreA.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.tbNombreA.Location = New System.Drawing.Point(280, 70)
+        Me.tbNombreA.Location = New System.Drawing.Point(301, 137)
         Me.tbNombreA.Name = "tbNombreA"
         Me.tbNombreA.Size = New System.Drawing.Size(417, 22)
         Me.tbNombreA.TabIndex = 7
@@ -197,23 +171,12 @@ Partial Class FormEditarAlumno
         '
         Me.lblCedula.AutoSize = True
         Me.lblCedula.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCedula.Location = New System.Drawing.Point(29, 174)
+        Me.lblCedula.Location = New System.Drawing.Point(50, 241)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(84, 23)
         Me.lblCedula.TabIndex = 3
         Me.lblCedula.Text = "Cédula"
         Me.lblCedula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblOrientacion
-        '
-        Me.lblOrientacion.AutoSize = True
-        Me.lblOrientacion.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOrientacion.Location = New System.Drawing.Point(23, 273)
-        Me.lblOrientacion.Name = "lblOrientacion"
-        Me.lblOrientacion.Size = New System.Drawing.Size(123, 23)
-        Me.lblOrientacion.TabIndex = 6
-        Me.lblOrientacion.Text = "Orientacion"
-        Me.lblOrientacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label1
         '
@@ -224,22 +187,11 @@ Partial Class FormEditarAlumno
         Me.Label1.TabIndex = 0
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lblCurso
-        '
-        Me.lblCurso.AutoSize = True
-        Me.lblCurso.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCurso.Location = New System.Drawing.Point(23, 322)
-        Me.lblCurso.Name = "lblCurso"
-        Me.lblCurso.Size = New System.Drawing.Size(65, 23)
-        Me.lblCurso.TabIndex = 5
-        Me.lblCurso.Text = "Curso"
-        Me.lblCurso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.Location = New System.Drawing.Point(23, 70)
+        Me.lblNombre.Location = New System.Drawing.Point(44, 137)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(90, 23)
         Me.lblNombre.TabIndex = 1
@@ -250,7 +202,7 @@ Partial Class FormEditarAlumno
         '
         Me.lblFechadeNacimiento.AutoSize = True
         Me.lblFechadeNacimiento.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechadeNacimiento.Location = New System.Drawing.Point(29, 221)
+        Me.lblFechadeNacimiento.Location = New System.Drawing.Point(50, 288)
         Me.lblFechadeNacimiento.Name = "lblFechadeNacimiento"
         Me.lblFechadeNacimiento.Size = New System.Drawing.Size(93, 23)
         Me.lblFechadeNacimiento.TabIndex = 4
@@ -261,7 +213,7 @@ Partial Class FormEditarAlumno
         '
         Me.lblPrimerApellido.AutoSize = True
         Me.lblPrimerApellido.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrimerApellido.Location = New System.Drawing.Point(23, 119)
+        Me.lblPrimerApellido.Location = New System.Drawing.Point(44, 186)
         Me.lblPrimerApellido.Name = "lblPrimerApellido"
         Me.lblPrimerApellido.Size = New System.Drawing.Size(157, 23)
         Me.lblPrimerApellido.TabIndex = 2
@@ -293,12 +245,8 @@ Partial Class FormEditarAlumno
     Friend WithEvents btnGuardarA As Button
     Friend WithEvents PanelContenedorNA As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents lblCedula As Label
-    Friend WithEvents lblOrientacion As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents lblCurso As Label
     Friend WithEvents lblNombre As Label
     Friend WithEvents lblFechadeNacimiento As Label
     Friend WithEvents lblPrimerApellido As Label

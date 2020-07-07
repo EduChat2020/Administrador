@@ -24,6 +24,7 @@
             fea.tbPrimerApellidoA.Text = DTAlumnos.CurrentRow.Cells(2).Value.ToString()
             fea.tbCedulaA.Text = DTAlumnos.CurrentRow.Cells(3).Value.ToString()
             fea.tbTelefonoA.Text = DTAlumnos.CurrentRow.Cells(4).Value.ToString()
+
             fea.ShowDialog()
             lblAyuda.Visible = False
         Else
@@ -36,6 +37,33 @@
 
 
         End If
+
+    End Sub
+
+    Private Sub btnAsignarMateria_Click(sender As Object, e As EventArgs) Handles btnAsignarMateria.Click
+        If (DTAlumnos.SelectedRows.Count > 0) Then
+            btnGuardarMaterias.Enabled = True
+            DTMaterias.Enabled = True
+            cbOrientaciones.Enabled = True
+
+            DTMaterias.Rows.Add(2, "Fisica", "1ero Informatica")
+            DTMaterias.Rows.Add(1, "Matematicas3", "3ero Informatica")
+
+
+            btnAsignarMateria.Enabled = False
+
+            lblAyuda.Visible = False
+        Else
+            MessageBox.Show("Por favor seleccione una fila...")
+            lblAyuda.Visible = True
+            btnGuardarMaterias.Enabled = False
+            DTMaterias.Enabled = False
+            cbOrientaciones.Enabled = False
+            btnAsignarMateria.Enabled = True
+        End If
+    End Sub
+
+    Private Sub lblAyuda_Click(sender As Object, e As EventArgs) Handles lblAyuda.Click
 
     End Sub
 
