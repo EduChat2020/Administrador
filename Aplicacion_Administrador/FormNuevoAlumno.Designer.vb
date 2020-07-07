@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormNuevoAlumno
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,19 @@ Partial Class FormNuevoAlumno
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormNuevoAlumno))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblPrimerApellido = New System.Windows.Forms.Label()
         Me.lblCedula = New System.Windows.Forms.Label()
-        Me.lblFechadeNacimiento = New System.Windows.Forms.Label()
         Me.PanelContenedorNA = New System.Windows.Forms.Panel()
+        Me.tbSegundoApellidoA = New System.Windows.Forms.TextBox()
+        Me.lblSegundoApellido = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.tbPrimerApellidoA = New System.Windows.Forms.TextBox()
         Me.tbCedulaA = New System.Windows.Forms.TextBox()
-        Me.tbFechadenacimientoA = New System.Windows.Forms.TextBox()
         Me.tbNombreA = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnCancelarA = New System.Windows.Forms.Button()
@@ -55,7 +55,7 @@ Partial Class FormNuevoAlumno
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.Location = New System.Drawing.Point(35, 117)
+        Me.lblNombre.Location = New System.Drawing.Point(48, 97)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(90, 23)
         Me.lblNombre.TabIndex = 1
@@ -66,7 +66,7 @@ Partial Class FormNuevoAlumno
         '
         Me.lblPrimerApellido.AutoSize = True
         Me.lblPrimerApellido.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrimerApellido.Location = New System.Drawing.Point(35, 166)
+        Me.lblPrimerApellido.Location = New System.Drawing.Point(48, 157)
         Me.lblPrimerApellido.Name = "lblPrimerApellido"
         Me.lblPrimerApellido.Size = New System.Drawing.Size(157, 23)
         Me.lblPrimerApellido.TabIndex = 2
@@ -77,42 +77,49 @@ Partial Class FormNuevoAlumno
         '
         Me.lblCedula.AutoSize = True
         Me.lblCedula.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCedula.Location = New System.Drawing.Point(35, 265)
+        Me.lblCedula.Location = New System.Drawing.Point(48, 294)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(84, 23)
         Me.lblCedula.TabIndex = 3
         Me.lblCedula.Text = "Cédula"
         Me.lblCedula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'lblFechadeNacimiento
-        '
-        Me.lblFechadeNacimiento.AutoSize = True
-        Me.lblFechadeNacimiento.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechadeNacimiento.Location = New System.Drawing.Point(35, 218)
-        Me.lblFechadeNacimiento.Name = "lblFechadeNacimiento"
-        Me.lblFechadeNacimiento.Size = New System.Drawing.Size(220, 23)
-        Me.lblFechadeNacimiento.TabIndex = 4
-        Me.lblFechadeNacimiento.Text = "Fecha de nacimiento"
-        Me.lblFechadeNacimiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'PanelContenedorNA
         '
         Me.PanelContenedorNA.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PanelContenedorNA.Controls.Add(Me.tbSegundoApellidoA)
+        Me.PanelContenedorNA.Controls.Add(Me.lblSegundoApellido)
         Me.PanelContenedorNA.Controls.Add(Me.PictureBox1)
         Me.PanelContenedorNA.Controls.Add(Me.tbPrimerApellidoA)
         Me.PanelContenedorNA.Controls.Add(Me.tbCedulaA)
-        Me.PanelContenedorNA.Controls.Add(Me.tbFechadenacimientoA)
         Me.PanelContenedorNA.Controls.Add(Me.tbNombreA)
         Me.PanelContenedorNA.Controls.Add(Me.lblCedula)
         Me.PanelContenedorNA.Controls.Add(Me.Label1)
         Me.PanelContenedorNA.Controls.Add(Me.lblNombre)
-        Me.PanelContenedorNA.Controls.Add(Me.lblFechadeNacimiento)
         Me.PanelContenedorNA.Controls.Add(Me.lblPrimerApellido)
         Me.PanelContenedorNA.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContenedorNA.Location = New System.Drawing.Point(0, 0)
         Me.PanelContenedorNA.Name = "PanelContenedorNA"
         Me.PanelContenedorNA.Size = New System.Drawing.Size(1092, 493)
         Me.PanelContenedorNA.TabIndex = 7
+        '
+        'tbSegundoApellidoA
+        '
+        Me.tbSegundoApellidoA.Location = New System.Drawing.Point(305, 226)
+        Me.tbSegundoApellidoA.Name = "tbSegundoApellidoA"
+        Me.tbSegundoApellidoA.Size = New System.Drawing.Size(417, 22)
+        Me.tbSegundoApellidoA.TabIndex = 17
+        '
+        'lblSegundoApellido
+        '
+        Me.lblSegundoApellido.AutoSize = True
+        Me.lblSegundoApellido.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSegundoApellido.Location = New System.Drawing.Point(48, 223)
+        Me.lblSegundoApellido.Name = "lblSegundoApellido"
+        Me.lblSegundoApellido.Size = New System.Drawing.Size(185, 23)
+        Me.lblSegundoApellido.TabIndex = 16
+        Me.lblSegundoApellido.Text = "Segundo Apellido"
+        Me.lblSegundoApellido.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PictureBox1
         '
@@ -126,29 +133,22 @@ Partial Class FormNuevoAlumno
         '
         'tbPrimerApellidoA
         '
-        Me.tbPrimerApellidoA.Location = New System.Drawing.Point(292, 169)
+        Me.tbPrimerApellidoA.Location = New System.Drawing.Point(305, 160)
         Me.tbPrimerApellidoA.Name = "tbPrimerApellidoA"
         Me.tbPrimerApellidoA.Size = New System.Drawing.Size(417, 22)
         Me.tbPrimerApellidoA.TabIndex = 12
         '
         'tbCedulaA
         '
-        Me.tbCedulaA.Location = New System.Drawing.Point(292, 268)
+        Me.tbCedulaA.Location = New System.Drawing.Point(305, 297)
         Me.tbCedulaA.Name = "tbCedulaA"
         Me.tbCedulaA.Size = New System.Drawing.Size(417, 22)
         Me.tbCedulaA.TabIndex = 9
         '
-        'tbFechadenacimientoA
-        '
-        Me.tbFechadenacimientoA.Location = New System.Drawing.Point(292, 221)
-        Me.tbFechadenacimientoA.Name = "tbFechadenacimientoA"
-        Me.tbFechadenacimientoA.Size = New System.Drawing.Size(417, 22)
-        Me.tbFechadenacimientoA.TabIndex = 8
-        '
         'tbNombreA
         '
         Me.tbNombreA.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.tbNombreA.Location = New System.Drawing.Point(292, 117)
+        Me.tbNombreA.Location = New System.Drawing.Point(305, 97)
         Me.tbNombreA.Name = "tbNombreA"
         Me.tbNombreA.Size = New System.Drawing.Size(417, 22)
         Me.tbNombreA.TabIndex = 7
@@ -220,7 +220,6 @@ Partial Class FormNuevoAlumno
     Friend WithEvents lblNombre As Label
     Friend WithEvents lblPrimerApellido As Label
     Friend WithEvents lblCedula As Label
-    Friend WithEvents lblFechadeNacimiento As Label
     Friend WithEvents PanelContenedorNA As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnCancelarA As Button
@@ -228,6 +227,7 @@ Partial Class FormNuevoAlumno
     Friend WithEvents PictureBox1 As PictureBox
     Public WithEvents tbPrimerApellidoA As TextBox
     Public WithEvents tbCedulaA As TextBox
-    Public WithEvents tbFechadenacimientoA As TextBox
     Public WithEvents tbNombreA As TextBox
+    Public WithEvents tbSegundoApellidoA As TextBox
+    Friend WithEvents lblSegundoApellido As Label
 End Class
