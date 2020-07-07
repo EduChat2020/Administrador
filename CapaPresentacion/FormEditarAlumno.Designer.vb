@@ -92,6 +92,9 @@ Partial Class FormEditarAlumno
         '
         'PanelContenedorNA
         '
+        Me.PanelContenedorNA.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelContenedorNA.BackColor = System.Drawing.Color.WhiteSmoke
         Me.PanelContenedorNA.Controls.Add(Me.tbID)
         Me.PanelContenedorNA.Controls.Add(Me.Label2)
@@ -109,10 +112,9 @@ Partial Class FormEditarAlumno
         Me.PanelContenedorNA.Controls.Add(Me.lblNombre)
         Me.PanelContenedorNA.Controls.Add(Me.lblFechadeNacimiento)
         Me.PanelContenedorNA.Controls.Add(Me.lblPrimerApellido)
-        Me.PanelContenedorNA.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelContenedorNA.Location = New System.Drawing.Point(0, 0)
+        Me.PanelContenedorNA.Location = New System.Drawing.Point(12, 6)
         Me.PanelContenedorNA.Name = "PanelContenedorNA"
-        Me.PanelContenedorNA.Size = New System.Drawing.Size(1092, 493)
+        Me.PanelContenedorNA.Size = New System.Drawing.Size(1068, 416)
         Me.PanelContenedorNA.TabIndex = 9
         '
         'tbID
