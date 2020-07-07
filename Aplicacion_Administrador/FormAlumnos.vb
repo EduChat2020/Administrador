@@ -2,10 +2,6 @@
 
 
     Private Sub FormAlumnos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DTAlumnos.Columns(0).Visible = False
-        DTMaterias.Columns(0).Visible = False
-        DTMateriasAnotadas.Columns(0).Visible = False
-
         DTAlumnos.Rows.Add(1, "Francisco", "Pagani", 3242131, 26959301)
         DTAlumnos.Rows.Add(2, "pepe", "reina", 3243232, 26953456)
     End Sub

@@ -22,6 +22,7 @@ Partial Class FormAlumnos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAlumnos))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -34,8 +35,8 @@ Partial Class FormAlumnos
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAlumnos))
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnCerrar = New System.Windows.Forms.PictureBox()
         Me.btnNuevo_Alumno = New System.Windows.Forms.Button()
         Me.btnEditar_Alumno = New System.Windows.Forms.Button()
         Me.btnEliminar_Alumno = New System.Windows.Forms.Button()
@@ -49,22 +50,20 @@ Partial Class FormAlumnos
         Me.DTAlumnos = New System.Windows.Forms.DataGridView()
         Me.lblAlumnos = New System.Windows.Forms.Label()
         Me.DTMaterias = New System.Windows.Forms.DataGridView()
+        Me.lblMaterias = New System.Windows.Forms.Label()
+        Me.cbOrientaciones = New System.Windows.Forms.ComboBox()
+        Me.DTMateriasAntadas = New System.Windows.Forms.DataGridView()
+        Me.btnGuardarMaterias = New System.Windows.Forms.Button()
+        Me.lblMateriasAnotadas = New System.Windows.Forms.Label()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Materias = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreMateria = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NombreOrientacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lblMaterias = New System.Windows.Forms.Label()
-        Me.cbOrientaciones = New System.Windows.Forms.ComboBox()
-        Me.DTMateriasAnotadas = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Materias = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnGuardarMaterias = New System.Windows.Forms.Button()
-        Me.lblMateriasAnotadas = New System.Windows.Forms.Label()
-        Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.btnBorrarMaterias = New System.Windows.Forms.Button()
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DTAlumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DTMaterias, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DTMateriasAnotadas, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DTMateriasAntadas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -78,6 +77,17 @@ Partial Class FormAlumnos
         Me.Label1.Size = New System.Drawing.Size(303, 37)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Control de Alúmnos"
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
+        Me.btnCerrar.Location = New System.Drawing.Point(12, 9)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(16, 16)
+        Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.btnCerrar.TabIndex = 4
+        Me.btnCerrar.TabStop = False
         '
         'btnNuevo_Alumno
         '
@@ -297,6 +307,116 @@ Partial Class FormAlumnos
         Me.DTMaterias.Size = New System.Drawing.Size(528, 220)
         Me.DTMaterias.TabIndex = 12
         '
+        'lblMaterias
+        '
+        Me.lblMaterias.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblMaterias.AutoSize = True
+        Me.lblMaterias.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMaterias.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.lblMaterias.Location = New System.Drawing.Point(800, 34)
+        Me.lblMaterias.Name = "lblMaterias"
+        Me.lblMaterias.Size = New System.Drawing.Size(92, 23)
+        Me.lblMaterias.TabIndex = 13
+        Me.lblMaterias.Text = "Materias"
+        '
+        'cbOrientaciones
+        '
+        Me.cbOrientaciones.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbOrientaciones.Enabled = False
+        Me.cbOrientaciones.FormattingEnabled = True
+        Me.cbOrientaciones.Location = New System.Drawing.Point(987, 34)
+        Me.cbOrientaciones.Name = "cbOrientaciones"
+        Me.cbOrientaciones.Size = New System.Drawing.Size(282, 24)
+        Me.cbOrientaciones.TabIndex = 14
+        Me.cbOrientaciones.Text = "Filtrar por Orientacion"
+        '
+        'DTMateriasAntadas
+        '
+        Me.DTMateriasAntadas.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTMateriasAntadas.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.DTMateriasAntadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DTMateriasAntadas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.Materias})
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DTMateriasAntadas.DefaultCellStyle = DataGridViewCellStyle10
+        Me.DTMateriasAntadas.Enabled = False
+        Me.DTMateriasAntadas.Location = New System.Drawing.Point(741, 459)
+        Me.DTMateriasAntadas.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DTMateriasAntadas.Name = "DTMateriasAntadas"
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DTMateriasAntadas.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.DTMateriasAntadas.RowHeadersWidth = 51
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue
+        Me.DTMateriasAntadas.RowsDefaultCellStyle = DataGridViewCellStyle12
+        Me.DTMateriasAntadas.RowTemplate.Height = 24
+        Me.DTMateriasAntadas.Size = New System.Drawing.Size(528, 206)
+        Me.DTMateriasAntadas.TabIndex = 15
+        '
+        'btnGuardarMaterias
+        '
+        Me.btnGuardarMaterias.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnGuardarMaterias.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnGuardarMaterias.Enabled = False
+        Me.btnGuardarMaterias.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight
+        Me.btnGuardarMaterias.FlatAppearance.BorderSize = 2
+        Me.btnGuardarMaterias.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.btnGuardarMaterias.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.btnGuardarMaterias.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
+        Me.btnGuardarMaterias.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.btnGuardarMaterias.Location = New System.Drawing.Point(846, 308)
+        Me.btnGuardarMaterias.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnGuardarMaterias.Name = "btnGuardarMaterias"
+        Me.btnGuardarMaterias.Size = New System.Drawing.Size(337, 38)
+        Me.btnGuardarMaterias.TabIndex = 16
+        Me.btnGuardarMaterias.Text = "Guardar"
+        Me.btnGuardarMaterias.UseVisualStyleBackColor = False
+        '
+        'lblMateriasAnotadas
+        '
+        Me.lblMateriasAnotadas.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblMateriasAnotadas.AutoSize = True
+        Me.lblMateriasAnotadas.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMateriasAnotadas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(98, Byte), Integer))
+        Me.lblMateriasAnotadas.Location = New System.Drawing.Point(737, 413)
+        Me.lblMateriasAnotadas.Name = "lblMateriasAnotadas"
+        Me.lblMateriasAnotadas.Size = New System.Drawing.Size(195, 23)
+        Me.lblMateriasAnotadas.TabIndex = 17
+        Me.lblMateriasAnotadas.Text = "Materias Anotadas"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        Me.DataGridViewTextBoxColumn6.Width = 75
+        '
+        'Materias
+        '
+        Me.Materias.HeaderText = "MATERIAS"
+        Me.Materias.MinimumWidth = 6
+        Me.Materias.Name = "Materias"
+        Me.Materias.Width = 125
+        '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
@@ -321,156 +441,15 @@ Partial Class FormAlumnos
         Me.NombreOrientacion.ReadOnly = True
         Me.NombreOrientacion.Width = 125
         '
-        'lblMaterias
-        '
-        Me.lblMaterias.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblMaterias.AutoSize = True
-        Me.lblMaterias.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMaterias.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(98, Byte), Integer))
-        Me.lblMaterias.Location = New System.Drawing.Point(800, 34)
-        Me.lblMaterias.Name = "lblMaterias"
-        Me.lblMaterias.Size = New System.Drawing.Size(92, 23)
-        Me.lblMaterias.TabIndex = 13
-        Me.lblMaterias.Text = "Materias"
-        '
-        'cbOrientaciones
-        '
-        Me.cbOrientaciones.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbOrientaciones.Enabled = False
-        Me.cbOrientaciones.FormattingEnabled = True
-        Me.cbOrientaciones.Location = New System.Drawing.Point(987, 34)
-        Me.cbOrientaciones.Name = "cbOrientaciones"
-        Me.cbOrientaciones.Size = New System.Drawing.Size(282, 24)
-        Me.cbOrientaciones.TabIndex = 14
-        Me.cbOrientaciones.Text = "Filtrar por Orientacion"
-        '
-        'DTMateriasAnotadas
-        '
-        Me.DTMateriasAnotadas.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTMateriasAnotadas.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
-        Me.DTMateriasAnotadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DTMateriasAnotadas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.Materias})
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DTMateriasAnotadas.DefaultCellStyle = DataGridViewCellStyle10
-        Me.DTMateriasAnotadas.Enabled = False
-        Me.DTMateriasAnotadas.Location = New System.Drawing.Point(741, 459)
-        Me.DTMateriasAnotadas.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DTMateriasAnotadas.Name = "DTMateriasAnotadas"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DTMateriasAnotadas.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
-        Me.DTMateriasAnotadas.RowHeadersWidth = 51
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue
-        Me.DTMateriasAnotadas.RowsDefaultCellStyle = DataGridViewCellStyle12
-        Me.DTMateriasAnotadas.RowTemplate.Height = 24
-        Me.DTMateriasAnotadas.Size = New System.Drawing.Size(528, 206)
-        Me.DTMateriasAnotadas.TabIndex = 15
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 75
-        '
-        'Materias
-        '
-        Me.Materias.HeaderText = "MATERIAS"
-        Me.Materias.MinimumWidth = 6
-        Me.Materias.Name = "Materias"
-        Me.Materias.Width = 125
-        '
-        'btnGuardarMaterias
-        '
-        Me.btnGuardarMaterias.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnGuardarMaterias.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnGuardarMaterias.Enabled = False
-        Me.btnGuardarMaterias.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight
-        Me.btnGuardarMaterias.FlatAppearance.BorderSize = 2
-        Me.btnGuardarMaterias.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.btnGuardarMaterias.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.btnGuardarMaterias.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
-        Me.btnGuardarMaterias.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.btnGuardarMaterias.Image = CType(resources.GetObject("btnGuardarMaterias.Image"), System.Drawing.Image)
-        Me.btnGuardarMaterias.Location = New System.Drawing.Point(1016, 308)
-        Me.btnGuardarMaterias.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnGuardarMaterias.Name = "btnGuardarMaterias"
-        Me.btnGuardarMaterias.Size = New System.Drawing.Size(105, 84)
-        Me.btnGuardarMaterias.TabIndex = 16
-        Me.btnGuardarMaterias.UseVisualStyleBackColor = False
-        '
-        'lblMateriasAnotadas
-        '
-        Me.lblMateriasAnotadas.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblMateriasAnotadas.AutoSize = True
-        Me.lblMateriasAnotadas.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMateriasAnotadas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(98, Byte), Integer))
-        Me.lblMateriasAnotadas.Location = New System.Drawing.Point(737, 413)
-        Me.lblMateriasAnotadas.Name = "lblMateriasAnotadas"
-        Me.lblMateriasAnotadas.Size = New System.Drawing.Size(195, 23)
-        Me.lblMateriasAnotadas.TabIndex = 17
-        Me.lblMateriasAnotadas.Text = "Materias Anotadas"
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
-        Me.btnCerrar.Location = New System.Drawing.Point(12, 9)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(16, 16)
-        Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.btnCerrar.TabIndex = 4
-        Me.btnCerrar.TabStop = False
-        '
-        'btnBorrarMaterias
-        '
-        Me.btnBorrarMaterias.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnBorrarMaterias.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnBorrarMaterias.Enabled = False
-        Me.btnBorrarMaterias.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight
-        Me.btnBorrarMaterias.FlatAppearance.BorderSize = 2
-        Me.btnBorrarMaterias.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.btnBorrarMaterias.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.btnBorrarMaterias.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!)
-        Me.btnBorrarMaterias.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.btnBorrarMaterias.Image = CType(resources.GetObject("btnBorrarMaterias.Image"), System.Drawing.Image)
-        Me.btnBorrarMaterias.Location = New System.Drawing.Point(877, 308)
-        Me.btnBorrarMaterias.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnBorrarMaterias.Name = "btnBorrarMaterias"
-        Me.btnBorrarMaterias.Size = New System.Drawing.Size(105, 84)
-        Me.btnBorrarMaterias.TabIndex = 18
-        Me.btnBorrarMaterias.UseVisualStyleBackColor = False
-        '
         'FormAlumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1295, 766)
-        Me.Controls.Add(Me.btnBorrarMaterias)
         Me.Controls.Add(Me.lblMateriasAnotadas)
         Me.Controls.Add(Me.btnGuardarMaterias)
-        Me.Controls.Add(Me.DTMateriasAnotadas)
+        Me.Controls.Add(Me.DTMateriasAntadas)
         Me.Controls.Add(Me.cbOrientaciones)
         Me.Controls.Add(Me.lblMaterias)
         Me.Controls.Add(Me.DTMaterias)
@@ -488,16 +467,17 @@ Partial Class FormAlumnos
         Me.Name = "FormAlumnos"
         Me.ShowInTaskbar = False
         Me.Text = "Alumnos"
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DTAlumnos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DTMaterias, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DTMateriasAnotadas, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DTMateriasAntadas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnCerrar As PictureBox
     Friend WithEvents btnNuevo_Alumno As Button
     Friend WithEvents btnEditar_Alumno As Button
     Friend WithEvents btnEliminar_Alumno As Button
@@ -513,7 +493,7 @@ Partial Class FormAlumnos
     Friend WithEvents DTMaterias As DataGridView
     Friend WithEvents lblMaterias As Label
     Friend WithEvents cbOrientaciones As ComboBox
-    Friend WithEvents DTMateriasAnotadas As DataGridView
+    Friend WithEvents DTMateriasAntadas As DataGridView
     Friend WithEvents btnGuardarMaterias As Button
     Friend WithEvents lblMateriasAnotadas As Label
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
@@ -521,6 +501,4 @@ Partial Class FormAlumnos
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents NombreMateria As DataGridViewTextBoxColumn
     Friend WithEvents NombreOrientacion As DataGridViewTextBoxColumn
-    Friend WithEvents btnCerrar As PictureBox
-    Friend WithEvents btnBorrarMaterias As Button
 End Class
